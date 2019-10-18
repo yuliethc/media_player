@@ -12,5 +12,8 @@
   },
   "devDependencies": {
     "live-server": "^1.2.1"
-  }
+  },
+  "browserlist": [
+    "last 1 Chrome version"
+  ]
 }
