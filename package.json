@@ -10,10 +10,11 @@
   "scripts": {
     "start": "live-server"
   },
-  "devDependencies": {
-    "live-server": "^1.2.1"
-  },
+  "devDependencies": {},
   "browserlist": [
     "last 1 Chrome version"
-  ]
+  ],
+  "dependencies": {
+    "live-server": "^1.2.1"
+  }
 }
