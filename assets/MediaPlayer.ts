@@ -1,11 +1,15 @@
 
 class MediaPlayer {
+  media: HTMLMediaElement;
+  plugins: Array<any>;
+
   constructor(config) {
     this.media = config.el;
     this.plugins = config.plugins || [];
-    this._initPlugins();
+    this.initPlugins();
   }
-  _initPlugins() {
+
+  private initPlugins() {
     const player = {
       play: this.play,
       pause: this.pause,
@@ -18,15 +22,18 @@ class MediaPlayer {
       }
     };
     this.plugins.forEach(plugin => {
-      plugin.run(player);
+      plugin.run(this);
     });
   }
+
   play() {
     this.media.play();
   }
+
   pause() {
     this.media.pause();
   }
+
   togglePlay() {
     if (this.media.paused) {
       this.play();
@@ -35,9 +42,11 @@ class MediaPlayer {
       this.pause();
     }
   }
+
   mute() {
     this.media.muted = true;
   }
+
   unMute() {
     if (this.media.muted) {
       this.media.muted = false;
@@ -46,6 +55,7 @@ class MediaPlayer {
       this.mute();
     }
   }
+  
 }
 
 export default MediaPlayer;
