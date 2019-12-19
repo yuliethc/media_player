@@ -8,10 +8,11 @@
     "yuliethdotcom"
   ],
   "scripts": {
-    "start": "parecel index.html"
+    "start": "parcel index.html"
   },
   "devDependencies": {
-    "parcel-bundler": "^1.12.4"
+    "parcel-bundler": "^1.12.4",
+    "typescript": "^3.7.3"
   },
   "browserlist": [
     "last 1 Chrome version"
