@@ -1,12 +1,16 @@
 {
-  "name": "jsprofesional",
+  "name": "media-player",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Full multimedia player",
+  "license": "yulieth.com",
+  "author": "Yulieth Lubo de D'Agostini <yuliethdotcom@gmail.com>",
+  "keywords": [
+    "yuliethdotcom"
+  ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "live-server"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC"
+  "devDependencies": {
+    "live-server": "^1.2.1"
+  }
 }
