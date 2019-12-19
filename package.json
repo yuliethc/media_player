@@ -8,13 +8,13 @@
     "yuliethdotcom"
   ],
   "scripts": {
-    "start": "live-server"
+    "start": "parecel index.html"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "parcel-bundler": "^1.12.4"
+  },
   "browserlist": [
     "last 1 Chrome version"
   ],
-  "dependencies": {
-    "live-server": "^1.2.1"
-  }
+  "dependencies": {}
 }
